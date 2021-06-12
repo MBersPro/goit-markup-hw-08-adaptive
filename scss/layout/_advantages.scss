@@ -1,0 +1,38 @@
+.our-advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-advantages__li {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  width: 270px;
+}
+
+.our-advantages__item {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.our-advantages__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.our-advantages__tit {
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.our-advantages__text {
+  font-weight: 400;
+  color: #757575;
+  line-height: 24px;
+}

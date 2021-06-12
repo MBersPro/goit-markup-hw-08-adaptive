@@ -1,0 +1,33 @@
+.effective-solutions {
+  background-color: #c4c4c4;
+  height: 600px;
+  padding-top: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main-page-img/effective-solutions-bg.jpg);
+  background-size: cover;
+}
+
+.effective-solutions__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  color: white;
+  line-height: 60px;
+
+  width: 700px;
+  text-align: center;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.effective-solutions-button {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  padding: 10px 32px;
+}

@@ -1,0 +1,30 @@
+// BASE
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+// COMPONENTS
+@import "./components/btn";
+@import "./components/titles";
+@import "./components/social-link";
+@import "./components/social-icons";
+@import "./components/modal-backdrop";
+@import "./components/modal-form";
+@import "./components/logo";
+@import "./components/navigation-list";
+@import "./components/social-li";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/effective-solutions";
+@import "./layout/advantages";
+@import "./layout/business";
+@import "./layout/our-team";
+@import "./layout/regular-customers";
+@import "./layout/footer";
+@import "./layout/porfolio";
+
+// UTILIT
+@import "./utils/hidden";
+@import "./utils/variables";
+@import "./utils/mixins";

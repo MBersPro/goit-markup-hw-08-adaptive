@@ -1,0 +1,131 @@
+.footer {
+  background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__logo-adress-container {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.logo__footer-studio {
+  color: white;
+}
+
+.footer__adress-container {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.footer__adress {
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+
+.footer__mail {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__phone {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__join-container {
+  padding-top: 10px;
+}
+
+.footer__join-force {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer__social-links-list {
+  display: flex;
+}
+
+.footer__social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__social-icon {
+  fill: #ffffff;
+}
+
+.footer__subscribe-container {
+  padding-top: 10px;
+  margin-left: 93px;
+}
+
+.footer__subscribe-force {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer__form-button-container {
+  display: flex;
+}
+
+.footer__mail-form {
+  margin-right: 12px;
+}
+
+.footer__mail-input {
+  height: 50px;
+  min-width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: #2f303a;
+  min-width: 358px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  color: #ffffff;
+}
+
+.footer__button-icon-container {
+  position: relative;
+}
+
+.footer__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 62px;
+}
+
+.footer__button-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 28px;
+}

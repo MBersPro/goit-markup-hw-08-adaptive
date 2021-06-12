@@ -1,0 +1,151 @@
+.modal__close-btn-icon {
+  width: 11px;
+  height: 11px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-force {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal__form-field {
+  margin-bottom: 10px;
+  margin-top: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+
+  &:focus,
+  &:hover {
+    border-color: #2196f3;
+}
+}
+
+
+
+.modal__form-input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.modal__form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  margin-top: 4px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: rgb(33, 150, 243);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal__form-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+
+  .modal__form-input:hover + &,
+  .modal__form-input:focus + & {
+    fill: #2196f3;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal__form-message {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+}
+
+.modal__form-checkbox-desc {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 7px;
+    top: 12px;
+
+    .modal__form-check:checked + & {
+      background-color: #2196f3;
+      background-image: url("../images/icon-nike.svg");
+      background-size: contain;
+      border-color: #2196f3;
+    }
+  }
+}
+
+.modal__true {
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.modal__form-checkbox-link {
+  color: #2196f3;
+}
+
+.modal__form-btn {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal__btn-text {
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
