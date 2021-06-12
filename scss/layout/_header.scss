@@ -18,6 +18,11 @@
 .logo__header {
   margin-right: 93px;
 }
+@media (min-width: 480px) {
+  .logo__header{
+    margin-right: 276;
+  }
+}
 
 .logo__web {
   color: #2196f3;
