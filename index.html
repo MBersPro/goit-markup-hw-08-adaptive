@@ -37,19 +37,61 @@
             </div>
             <div class="header__info">
                 <a class="header__contact link" href="mailto:info@devstudio.com">
-                    <svg class="header__contact-icon">
+                    <svg class="header__contact-icon header__mail-icon">
                         <use href="./images/sprite.svg#icon-mail-svg"></use>
                     </svg>
                     info@devstudio.com
                 </a>
                 <a class="header__contact link" href="tel:+380961111111">
-                    <svg class="header__contact-icon">
+                    <svg class="header__contact-icon header__phone-icon">
                         <use href="./images/sprite.svg#icon-smartphone-svg"></use>
                     </svg>
                     +38 096 111 11 11
                 </a>
             </div>
+            <button type="button" class="header__mobile-btn" data-menu-button>
+                <svg class="header__burger-icon">
+                    <use href="./images/sprite.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
         </div>
+        <!-- ========================================mobile_menu===================================== -->
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__container">
+                <div class="modal-close">
+                    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                        <svg class="modal__close-btn-icon_2">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__nav-item">
+                        <a href="index.html" class="mobile-menu__nav-link-blue link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="portfoliopage.html" class="mobile-menu__nav-link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="index.html" class="mobile-menu__nav-link link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="info_mobile">
+                    <a class="modal__tel link" href="tel:+380441111111">
+                        +38 096 111 11 11
+                    </a>
+                    <a class="modal__mail link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </div> 
+                    <ul class="ul__modal-social list">
+                        <li class="li__modal-social"><a href="https://www.instagram.com/?hl=ru" class="a__modal-social link">Instagram</a></li>
+                        <li class="li__modal-social"><a href="https://twitter.com/?lang=ru" class="a__modal-social link">Twitter</a></li>
+                        <li class="li__modal-social"><a href="https://www.facebook.com/" class="a__modal-social link">Facebook</a></li>
+                        <li class="li__modal-social"><a href="https://ru.linkedin.com/" class="a__modal-social link">LinkedIn</a></li>
+                    </ul>  
+            </div>
+        </div>  
     </header>    
 
     <main>
@@ -151,11 +193,18 @@
                 <h2 class="rife-title">Наша команда</h2>
                 <ul class="our-team__cards-list list">
                     <li class="our-team__card-li">
-                        <img
-                        src="./images/main-page-img/igor.jpg"
-                        alt="Фотография Игоря Демьяненко"
-                        width="270"
-                        />
+                        <picture>
+                            <source srcset="./images/images__our-team/webp/our-team1-desktop.webp 1x, ./images/images__our-team/webp/our-team1-desktop@2.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team1-desktop.jpg 1x, ./images/images__our-team/jpg/our-team1-desktop@2.jpg 2x" media="(min-width: 1200px)">
+
+                            <source srcset="./images/images__our-team/webp/our-team1-table.webp 1x, ./images/images__our-team/webp/our-team1-table@2.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team1-table.jpg 1x, ./images/images__our-team/jpg/our-team1-tablet@2.jpg 2x" media="(min-width: 768px)">
+
+                            <source srcset="./images/images__our-team/webp/our-team1-mobile.webp 1x, ./images/images__our-team/webp/our-team1-mobile@2.webp 2x" media="(min-width: 280px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team1-mobile.jpg 1x, ./images/images__our-team/jpg/our-team1-mobile@2.jpg 2x" media="(min-width: 280px)">
+
+                            <img src="./images/images__our-team/jpg/our-team1-mobile.jpg" alt="Фотография Игоря Демьяненко" class="our-team__photo">
+                        </picture>
                         <h3 class="our-team__name">Игорь Демьяненко</h3>
                         <p class="our-team__specialization">Product Designer</p>
                         <ul class="our-team__social-links-list list">
@@ -190,11 +239,18 @@
                         </ul>
                     </li>
                     <li class="our-team__card-li">
-                        <img
-                        src="./images/main-page-img/olga.jpg"
-                        alt="Фотография Ольги Репиной"
-                        width="270"
-                        />
+                        <picture>
+                            <source srcset="./images/images__our-team/webp/our-team2-desktop.webp 1x, ./images/images__our-team/webp/our-team2-desktop@2.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team2-desktop.jpg 1x, ./images/images__our-team/jpg/our-team2-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                            
+                            <source srcset="./images/images__our-team/webp/our-team2-table.webp 1x, ./images/images__our-team/webp/our-team2-table@2.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team2-table.jpg 1x, ./images/images__our-team/jpg/our-team2-tablet@2.jpg 2x" media="(min-width: 768px)">
+                            
+                            <source srcset="./images/images__our-team/webp/our-team2-mobile.webp 1x, ./images/images__our-team/webp/our-team2-mobile@2.webp 2x" media="(min-width: 280px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team2-mobile.jpg 1x, ./images/images__our-team/jpg/our-team2-mobile@2.jpg 2x" media="(min-width: 280px)">
+                            
+                            <img src="./images/images__our-team/jpg/our-team2-mobile.jpg" alt="Фотография Ольги Репиной" class="our-team__photo">
+                        </picture>
                         <h3 class="our-team__name">Ольга Репина</h3>
                         <p class="our-team__specialization">Frontend Developer</p>
                         <ul class="our-team__social-links-list list social-li">
@@ -229,11 +285,18 @@
                         </ul>
                     </li>
                     <li class="our-team__card-li">
-                        <img
-                        src="./images/main-page-img/nikola.jpg"
-                        alt="Фотография Николая Тарасова"
-                        width="270"
-                        />
+                        <picture>
+                            <source srcset="./images/images__our-team/webp/our-team3-desktop.webp 1x, ./images/images__our-team/webp/our-team3-desktop@2.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team3-desktop.jpg 1x, ./images/images__our-team/jpg/our-team3-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                            
+                            <source srcset="./images/images__our-team/webp/our-team3-table.webp 1x, ./images/images__our-team/webp/our-team3-table@2.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team3-table.jpg 1x, ./images/images__our-team/jpg/our-team3-tablet@2.jpg 2x" media="(min-width: 768px)">
+                            
+                            <source srcset="./images/images__our-team/webp/our-team3-mobile.webp 1x, ./images/images__our-team/webp/our-team3-mobile@2.webp 2x" media="(min-width: 280px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team3-mobile.jpg 1x, ./images/images__our-team/jpg/our-team3-mobile@2.jpg 2x" media="(min-width: 280px)">
+
+                            <img src="./images/images__our-team/jpg/our-team3-mobile.jpg" alt="Фотография Николая Тарасова" class="our-team__photo">
+                        </picture>
                         <h3 class="our-team__name">Николай Тарасов</h3>
                         <p class="our-team__specialization">Marketing</p>
                         <ul class="our-team__social-links-list list">
@@ -268,11 +331,18 @@
                         </ul>
                     </li>
                     <li class="our-team__card-li">
-                        <img 
-                        src="./images/main-page-img/michael.jpg"
-                        alt="Фотография Михаила Ермакова"
-                        width="270"
-                        />
+                        <picture>
+                            <source srcset="./images/images__our-team/webp/our-team4-desktop.webp 1x, ./images/images__our-team/webp/our-team4-desktop@2.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team4-desktop.jpg 1x, ./images/images__our-team/jpg/our-team4-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                        
+                            <source srcset="./images/images__our-team/webp/our-team4-table.webp 1x, ./images/images__our-team/webp/our-team4-table@2.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team4-table.jpg 1x, ./images/images__our-team/jpg/our-team4-tablet@2.jpg 2x" media="(min-width: 768px)">
+                        
+                            <source srcset="./images/images__our-team/webp/our-team4-mobile.webp 1x, ./images/images__our-team/webp/our-team4-mobile@2.webp 2x" media="(min-width: 280px)" type="image/webp">
+                            <source srcset="./images/images__our-team/jpg/our-team4-mobile.jpg 1x, ./images/images__our-team/jpg/our-team4-mobile@2.jpg 2x" media="(min-width: 280px)">
+                        
+                            <img src="./images/images__our-team/jpg/our-team3-mobile.jpg" alt="Фотография Николая Тарасова" class="our-team__photo">
+                        </picture>
                         <h3 class="our-team__name">Михаил Ермаков</h3>
                         <p class="our-team__specialization">UI Designer</p>
                         <ul class="our-team__social-links-list list">
@@ -368,48 +438,50 @@
 
     <footer class="footer">
         <div class="footer__container container">
-            <div class="footer__logo-adress-container">
-                <a class="footer__logo logo link" href="index.html">
-                    <span class="logo__web">Web</span><span class="logo__footer-studio">Studio</span>
-                </a>
-                <address class="footer__adress-container">
-                    <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
-                    <a class="footer__mail link" href="mailto:info@example.com">info@example.com</a><br>
-                    <a class="footer__phone link" href="tel:+3809911111">+38 099 111 11 11</a>
-                </address>
-            </div>
-            <div class="footer__join-container">
-                <p class="footer__join-force">ПРИСОЕДИНЯЙТЕСЬ</p>
-                <ul class="footer__social-links-list list">
-                    <li class="social-li">
-                        <a href="" class="social-link footer__social-link join-us-social-list-link-bg">
-                            <svg class="social-icon footer__social-icon">
-                                <use href="./images/sprite.svg#icon-instagram-svg"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-li">
-                        <a href="" class="social-link footer__social-link">
-                            <svg class="social-icon footer__social-icon">
-                                <use href="./images/sprite.svg#icon-twitter-svg"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-li">
-                        <a href="" class="social-link footer__social-link">
-                            <svg class="social-icon footer__social-icon">
-                                <use href="./images/sprite.svg#icon-facebook-svg"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-li">
-                        <a href="" class="social-link footer__social-link">
-                            <svg class="social-icon footer__social-icon">
-                                <use href="./images/sprite.svg#icon-linkedin-svg"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer__adress-join-wrapper">
+                <div class="footer__logo-adress-container">
+                    <a class="footer__logo logo link" href="index.html">
+                        <span class="logo__web">Web</span><span class="logo__footer-studio">Studio</span>
+                    </a>
+                    <address class="footer__adress-container">
+                        <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
+                        <a class="footer__mail link" href="mailto:info@example.com">info@example.com</a><br>
+                        <a class="footer__phone link" href="tel:+3809911111">+38 099 111 11 11</a>
+                    </address>
+                </div>
+                <div class="footer__join-container">
+                    <p class="footer__join-force">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="footer__social-links-list list">
+                        <li class="social-li">
+                            <a href="" class="social-link footer__social-link join-us-social-list-link-bg">
+                                <svg class="social-icon footer__social-icon">
+                                    <use href="./images/sprite.svg#icon-instagram-svg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-li">
+                            <a href="" class="social-link footer__social-link">
+                                <svg class="social-icon footer__social-icon">
+                                    <use href="./images/sprite.svg#icon-twitter-svg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-li">
+                            <a href="" class="social-link footer__social-link">
+                                <svg class="social-icon footer__social-icon">
+                                    <use href="./images/sprite.svg#icon-facebook-svg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-li">
+                            <a href="" class="social-link footer__social-link">
+                                <svg class="social-icon footer__social-icon">
+                                    <use href="./images/sprite.svg#icon-linkedin-svg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer__subscribe-container">
                 <p class="footer__subscribe-force">ПОДПИШИСЬ НА РАССЫЛКУ</p>
@@ -483,6 +555,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>

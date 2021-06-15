@@ -18,7 +18,7 @@
 
     <header class="header">
         <div class="header__container container">
-            <div class="header__logonav-wrapper">
+            <div class="header__logonav-wrapper"> 
                 <a class="logo__header logo link" href="index.html">
                     <span class="logo__web">Web</span><span class="logo__header-studio">Studio</span>
                 </a>
@@ -38,20 +38,62 @@
             </div>
             <div class="header__info">
                 <a class="header__contact link" href="mailto:info@devstudio.com">
-                    <svg class="header__contact-icon">
+                    <svg class="header__contact-icon header__mail-icon">
                         <use href="./images/sprite.svg#icon-mail-svg"></use>
                     </svg>
                     info@devstudio.com
                 </a>
                 <a class="header__contact link" href="tel:+380961111111">
-                    <svg class="header__contact-icon">
+                    <svg class="header__contact-icon header__phone-icon">
                         <use href="./images/sprite.svg#icon-smartphone-svg"></use>
                     </svg>
                     +38 096 111 11 11
                 </a>
             </div>
+            <button type="button" class="header__mobile-btn" data-menu-button>
+                <svg class="header__burger-icon">
+                    <use href="./images/sprite.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
         </div>
-    </header>
+        <!-- ========================================mobile_menu===================================== -->
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__container">
+                <div class="modal-close">
+                    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                        <svg class="modal__close-btn-icon_2">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__nav-item">
+                        <a href="index.html" class="mobile-menu__nav-link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="portfoliopage.html" class="mobile-menu__nav-link-blue link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="index.html" class="mobile-menu__nav-link link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="info_mobile">
+                    <a class="modal__tel link" href="tel:+380441111111">
+                        +38 096 111 11 11
+                    </a>
+                    <a class="modal__mail link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </div> 
+                    <ul class="ul__modal-social list">
+                        <li class="li__modal-social"><a href="https://www.instagram.com/?hl=ru" class="a__modal-social link">Instagram</a></li>
+                        <li class="li__modal-social"><a href="https://twitter.com/?lang=ru" class="a__modal-social link">Twitter</a></li>
+                        <li class="li__modal-social"><a href="https://www.facebook.com/" class="a__modal-social link">Facebook</a></li>
+                        <li class="li__modal-social"><a href="https://ru.linkedin.com/" class="a__modal-social link">LinkedIn</a></li>
+                    </ul>  
+            </div>
+        </div>  
+    </header>    
 
     <main>
         <section class="portfolio section">
@@ -80,11 +122,21 @@
                         <li class="portfolio__cards-li">  
                             <div class="portfolio__card">                         
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/computer.jpg"
-                                    alt="Ноутбук с сайтом"
-                                    width="370"
-                                    />
+
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-tech.webp 1x, ./images/images__portfolio/webp/desk-tech2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-tech.jpg 1x, ./images/images__portfolio/jpg/desk-tech2x.jpg 2x" media="(min-width: 1200px)">
+
+                                        <source srcset="./images/images__portfolio/webp/tablet-tech.webp 1x, ./images/images__portfolio/webp/tablet-tech2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-tech.jpg 1x, ./images/images__portfolio/jpg/tablet-tech2x.jpg 2x" media="(min-width: 768px)">
+
+                                        <source srcset="./images/images__portfolio/webp/mobile-tech.webp 1x, ./images/images__portfolio/webp/mobile-tech2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-tech.jpg 1x, ./images/images__portfolio/jpg/mobile-tech2x.jpg 2x" media="(min-width: 280px)">
+
+
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
+
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -103,11 +155,19 @@
                         <li class="portfolio__cards-li">
                             <div class="portfolio__card">
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/poster.jpg"
-                                    alt="постер с баскетболистами"
-                                    width="370"
-                                    />
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-basketball.webp 1x, ./images/images__portfolio/webp/desk-basketball2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-basketball.jpg 1x, ./images/images__portfolio/jpg/desk-basketball2x.jpg 2x" media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/images__portfolio/webp/tablet-basketball.webp 1x, ./images/images__portfolio/webp/tablet-basketball2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-basketball.jpg 1x, ./images/images__portfolio/jpg/tablet-basketball2x.jpg 2x" media="(min-width: 768px)">
+                                    
+                                        <source srcset="./images/images__portfolio/wepb/mobile-basketball.webp 1x, ./images/images__portfolio/webp/mobile-basketball2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-basketball.jpg 1x, ./images/images__portfolio/jpg/mobile-basketball2x.jpg 2x" media="(min-width: 280px)">
+                                    
+                                    
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -126,11 +186,19 @@
                         <li class="portfolio__cards-li">
                             <div class="portfolio__card">
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/seafood.jpg"
-                                    alt="логотип Seafood"
-                                    width="370"
-                                    />
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-seafood.webp 1x, ./images/images__portfolio/webp/desk-seafood2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-seafood.jpg 1x, ./images/images__portfolio/jpg/desk-seafood2x.jpg 2x" media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/images__portfolio/webp/tablet-seafood.webp 1x, ./images/images__portfolio/webp/tablet-seafood2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-seafood.jpg 1x, ./images/images__portfolio/jpg/tablet-seafood2x.jpg 2x" media="(min-width: 768px)">
+                                    
+                                        <source srcset="./images/images__portfolio/wepb/mobile-seafood.webp 1x, ./images/images__portfolio/webp/mobile-seafood2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-seafood.jpg 1x, ./images/images__portfolio/jpg/mobile-seafood2x.jpg 2x" media="(min-width: 280px)">
+                                    
+                                    
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -149,11 +217,19 @@
                         <li class="portfolio__cards-li">
                             <div class="portfolio__card">
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/headphones.jpg"
-                                    alt="наушники"
-                                    width="370"
-                                    />
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-headphones.webp 1x, ./images/images__portfolio/webp/desk-headphones2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-headphones.jpg 1x, ./images/images__portfolio/jpg/desk-headphones2x.jpg 2x" media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/images__portfolio/webp/tablet-headphones.webp 1x, ./images/images__portfolio/webp/tablet-headphones2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-headphones.jpg 1x, ./images/images__portfolio/jpg/tablet-headphones2x.jpg 2x" media="(min-width: 768px)">
+                                    
+                                        <source srcset="./images/images__portfolio/wepb/mobile-headphones.webp 1x, ./images/images__portfolio/webp/mobile-headphones2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-headphones.jpg 1x, ./images/images__portfolio/jpg/mobile-headphones2x.jpg 2x" media="(min-width: 280px)">
+                                    
+                                    
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -172,11 +248,19 @@
                         <li class="portfolio__cards-li">
                             <div class="portfolio__card">
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/boxes.jpg"
-                                    alt="коробки"
-                                    width="370"
-                                    />
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-boxes.webp 1x, ./images/images__portfolio/webp/desk-boxes2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-boxes.jpg 1x, ./images/images__portfolio/jpg/desk-boxes2x.jpg 2x" media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/images__portfolio/webp/tablet-boxes.webp 1x, ./images/images__portfolio/webp/tablet-boxes2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-boxes.jpg 1x, ./images/images__portfolio/jpg/tablet-boxes2x.jpg 2x" media="(min-width: 768px)">
+                                    
+                                        <source srcset="./images/images__portfolio/wepb/mobile-boxes.webp 1x, ./images/images__portfolio/webp/mobile-boxes2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-boxes.jpg 1x, ./images/images__portfolio/jpg/mobile-boxes2x.jpg 2x" media="(min-width: 280px)">
+                                    
+                                    
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -195,11 +279,19 @@
                         <li class="portfolio__cards-li">
                             <div class="portfolio__card">
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/computer.jpg"
-                                    alt="компьютер"
-                                    width="370"
-                                    />
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-mac.webp 1x, ./images/images__portfolio/webp/desk-mac2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-mac.jpg 1x, ./images/images__portfolio/jpg/desk-mac2x.jpg 2x" media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/images__portfolio/webp/tablet-mac.webp 1x, ./images/images__portfolio/webp/tablet-mac2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-mac.jpg 1x, ./images/images__portfolio/jpg/tablet-mac2x.jpg 2x" media="(min-width: 768px)">
+                                    
+                                        <source srcset="./images/images__portfolio/wepb/mobile-mac.webp 1x, ./images/images__portfolio/webp/mobile-mac2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-mac.jpg 1x, ./images/images__portfolio/jpg/mobile-mac2x.jpg 2x" media="(min-width: 280px)">
+                                    
+                                    
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -218,11 +310,19 @@
                         <li class="portfolio__cards-li">
                             <div class="portfolio__card">
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/book.jpg"
-                                    alt="книга с картинками"
-                                    width="370"
-                                    />
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-book.webp 1x, ./images/images__portfolio/webp/desk-book2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-book.jpg 1x, ./images/images__portfolio/jpg/desk-boxes2x.jpg 2x" media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/images__portfolio/webp/tablet-book.webp 1x, ./images/images__portfolio/webp/tablet-book2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-book.jpg 1x, ./images/images__portfolio/jpg/tablet-book2x.jpg 2x" media="(min-width: 768px)">
+                                    
+                                        <source srcset="./images/images__portfolio/wepb/mobile-book.webp 1x, ./images/images__portfolio/webp/mobile-book2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-book.jpg 1x, ./images/images__portfolio/jpg/mobile-book2x.jpg 2x" media="(min-width: 280px)">
+                                    
+                                    
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -242,11 +342,19 @@
                         <li class="portfolio__cards-li">
                             <div class="portfolio__card">
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/labeltag.jpg"
-                                    alt="ярлык с логотипом"
-                                    width="370"
-                                    />
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-label.webp 1x, ./images/images__portfolio/webp/desk-label2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-label.jpg 1x, ./images/images__portfolio/jpg/desk-label2x.jpg 2x" media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/images__portfolio/webp/tablet-label.webp 1x, ./images/images__portfolio/webp/tablet-label2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-label.jpg 1x, ./images/images__portfolio/jpg/tablet-label2x.jpg 2x" media="(min-width: 768px)">
+                                    
+                                        <source srcset="./images/images__portfolio/wepb/mobile-label.webp 1x, ./images/images__portfolio/webp/mobile-label2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-label.jpg 1x, ./images/images__portfolio/jpg/mobile-label2x.jpg 2x" media="(min-width: 280px)">
+                                    
+                                    
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -265,11 +373,19 @@
                         <li class="portfolio__cards-li">
                             <div class="portfolio__card">
                                 <div class="portfolio__img-overlay-wrapper">
-                                    <img
-                                    src="./images/portfolio-page-img/growingbiz.jpg"
-                                    alt="ноутбук с сайтом Growing Business"
-                                    width="370"
-                                    />
+                                    <picture>
+                                        <source srcset="./images/images__portfolio/webp/desk-mackbook.webp 1x, ./images/images__portfolio/webp/desk-mackbook2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/desk-mackbook.jpg 1x, ./images/images__portfolio/jpg/desk-mackbook2x.jpg 2x" media="(min-width: 1200px)">
+                                    
+                                        <source srcset="./images/images__portfolio/webp/tablet-mackbook.webp 1x, ./images/images__portfolio/webp/tablet-mackbook2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/tablet-mackbook.jpg 1x, ./images/images__portfolio/jpg/tablet-mackbook2x.jpg 2x" media="(min-width: 768px)">
+                                    
+                                        <source srcset="./images/images__portfolio/wepb/mobile-mackbook.webp 1x, ./images/images__portfolio/webp/mobile-mackbook2x.webp 2x" media="(min-width: 280px)" type="image/webp">
+                                        <source srcset="./images/images__portfolio/jpg/mobile-mackbook.jpg 1x, ./images/images__portfolio/jpg/mobile-mackbook2x.jpg 2x" media="(min-width: 280px)">
+                                    
+                                    
+                                        <img src="./images/images__portfolio/jpg/desk-tech.jpg" alt="Ноутбук с сайтом" class="portfolio__photo">
+                                    </picture>
                                     <p class="portfolio__card-overlay">
                                         Технокряк это современная
                                         площадка распространения
@@ -352,5 +468,6 @@
                     </div>
                 </div>
         </footer>
+        <script src="./js/menu.js"></script>
 </body>
 </html>

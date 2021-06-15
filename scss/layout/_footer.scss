@@ -5,11 +5,32 @@
 }
 
 .footer__container {
-  display: flex;
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.footer__adress-join-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__logo-adress-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
@@ -47,6 +68,7 @@
 
 .footer__join-container {
   padding-top: 10px;
+  margin-bottom: 60px;
 }
 
 .footer__join-force {
@@ -62,6 +84,7 @@
 
 .footer__social-links-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer__social-link {
@@ -74,7 +97,17 @@
 
 .footer__subscribe-container {
   padding-top: 10px;
-  margin-left: 93px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+  // margin-left: 93px;
 }
 
 .footer__subscribe-force {
@@ -89,28 +122,43 @@
 }
 
 .footer__form-button-container {
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer__mail-form {
-  margin-right: 12px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
 }
 
 .footer__mail-input {
   height: 50px;
-  min-width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   background-color: #2f303a;
-  min-width: 358px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer__button-icon-container {
+  width: 200px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__button {

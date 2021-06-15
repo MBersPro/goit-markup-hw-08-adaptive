@@ -1,24 +1,61 @@
 .effective-solutions {
   background-color: #c4c4c4;
-  height: 600px;
-  padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-bottom: 200px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/main-page-img/effective-solutions-bg.jpg);
+    url(../images/images__effective-solutions/jpg/effective-solutions-bg-mobile.jpg);
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/images__effective-solutions/jpg/effective-solutions-bg-mobile@2x.jpg);
+    }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/images__effective-solutions/jpg/effective-solutions-bg-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/images__effective-solutions/jpg/effective-solutions-bg-tablet@2x.jpg);
+    }
+
+    @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/images__effective-solutions/jpg/effective-solutions-bg-mobile.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/images__effective-solutions/jpg/effective-solutions-bg-mobile@2x.jpg);
+    }
+  }
 }
 
 .effective-solutions__title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
+  // font-size: 44px;
   letter-spacing: 0.06em;
   color: white;
-  line-height: 60px;
+  line-height: 42px;
+  // line-height: 60px;
 
-  width: 700px;
+  // width: 700px;
+  max-width: 370px;
   text-align: center;
 
   margin-right: auto;
