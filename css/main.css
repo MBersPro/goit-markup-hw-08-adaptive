@@ -188,6 +188,7 @@ ol {
 
 .ul__modal-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
 }
 
