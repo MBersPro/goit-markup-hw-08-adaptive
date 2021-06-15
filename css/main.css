@@ -277,10 +277,34 @@ ol {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 95vw;
+  height: 95vh;
+  max-height: 609px;
   transform: translate(-50%, -50%);
-  width: 528px;
   background-color: #ffffff;
   padding: 40px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .modal {
+    height: 90vh;
+    overflow: auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal__close-btn {
@@ -528,6 +552,12 @@ ol {
   }
 }
 
+@media (min-width: 480px) {
+  .logo__header {
+    margin-right: 276;
+  }
+}
+
 .logo__web {
   color: #2196f3;
 }
@@ -726,11 +756,12 @@ ol {
   padding-top: 118px;
   padding-bottom: 118px;
   padding-bottom: 200px;
+  height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images__effective-solutions/jpg/effective-solutions-bg-mobile.jpg);
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .effective-solutions {
     background-image: url(../images/images__effective-solutions/jpg/effective-solutions-bg-mobile@2x.jpg);
   }
@@ -748,6 +779,38 @@ ol {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .effective-solutions {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images__effective-solutions/jpg/effective-solutions-bg-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .effective-solutions {
+    background-image: url(../images/images__effective-solutions/jpg/effective-solutions-bg-desktop@2x.jpg);
+  }
+}
+
+.effective-solutions__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.effective-solutions__discription {
+  max-width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+  .effective-solutions__discription {
+    max-width: 696px;
+  }
+}
+
 .effective-solutions__title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -755,17 +818,21 @@ ol {
   letter-spacing: 0.06em;
   color: white;
   line-height: 42px;
-  max-width: 370px;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .effective-solutions__title {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 .effective-solutions-button {
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 40px;
   padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .our-advantages__list {
