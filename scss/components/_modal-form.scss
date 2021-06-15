@@ -99,12 +99,15 @@
 .modal__form-checkbox-desc {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
   position: relative;
-
+ 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
   &::before {
     display: block;
     content: "";

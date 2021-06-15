@@ -229,13 +229,14 @@ ol {
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .rife-title {
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 50px;
   }
 }
 
@@ -431,11 +432,17 @@ ol {
 .modal__form-checkbox-desc {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
   position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form-checkbox-desc {
+    font-size: 14px;
+  }
 }
 
 .modal__form-checkbox-desc::before {
@@ -898,6 +905,7 @@ ol {
 }
 
 .our-advantages__tit {
+  font-size: 14px;
   font-weight: 700;
   color: #212121;
   margin-bottom: 10px;
@@ -1153,6 +1161,7 @@ ol {
 @media screen and (min-width: 1200px) {
   .footer__logo-adress-container {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
