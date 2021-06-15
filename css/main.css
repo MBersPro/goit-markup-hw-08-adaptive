@@ -86,6 +86,8 @@ ol {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
+  overflow: auto;
+  z-index: 100;
   transform: translateY(-100%);
   transition: transform 250ms linear;
 }
@@ -97,6 +99,7 @@ ol {
 }
 
 .mobile-menu__close-btn {
+  display: inline-block;
   position: absolute;
   top: 10px;
   right: 15px;
@@ -135,8 +138,9 @@ ol {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 20px;
   letter-spacing: 0.02em;
+  padding-right: 40px;
 }
 
 .mobile-menu__nav-link {
@@ -196,15 +200,14 @@ ol {
   color: #2196f3;
 }
 
-.li__modal-social::after {
-  content: "";
-  height: 22px;
-  width: 3px;
-  background-color: #2196f3;
-  display: inline-block;
-  bottom: 0;
-  left: 0;
-  border-radius: 2px;
+.li__modal-social {
+  align-self: baseline;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.li__modal-social:not(:first-child) {
+  padding-left: 10px;
 }
 
 .mobile-menu__nav-link-blue {
@@ -274,7 +277,7 @@ ol {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   width: 95vw;
